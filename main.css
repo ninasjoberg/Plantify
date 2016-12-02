@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'roboto_condensedlight';
+    src: url('robotocondensed-light-webfont.woff2') format('woff2'),
+         url('robotocondensed-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'slabo_27pxregular';
+    src: url('slabo27px-regular-webfont.woff2') format('woff2'),
+         url('slabo27px-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+	font-size: 16px;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin: 0 auto;
+	font-family: 'slabo_27pxregular';
+}
+
+h1, h2, h3, th{
+	font-family: 'roboto_condensedlight', Sans-serif;
+	font-weight: normal;
+}
+
+header{
+	width: 100%;
+	box-sizing: border-box;
+	background-color: #3d7a6a;
+	padding: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* denna klass används bara en gång*/
+.name-logo{ 
+	display: flex;
+	align-items: center;
+}
+
+/* detta är ett specifikt id för loggan*/
+#logotype{
+	width: 4rem;
+	height: 4rem;
+}
+
+/* denna klass används i headingen på varje sida*/
+.navigation{
+	font-size: 0.8rem;
+	color: black;
+}
+
+/* denna klass används i headingen på varje sida*/
+.break{
+	display: inline-block;
+	margin: 0;
+}
+
+/* denna klass används i headingen på varje sida*/
+.pages{
+	color: black;
+	text-decoration: none;
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 51rem;
+}
+
+/* denna klass används på varje sida*/
+.heading1{
+	border-bottom: 0.15rem solid;
+}
+
+/* denna klass används bara på förstasidan*/
+.container{
+	display: flex;
+	margin-top: 1.5rem;
+}
+
+/* denna klass används bara på förstasidan*/
+.text-box{
+	box-sizing: border-box;
+	background-color: #231a1b;
+	color: white;
+	padding: 1.5rem;
+	width: 25rem;
+	display: flex;
+	margin-right: 1rem;
+	line-height: 2rem;
+	letter-spacing: 0.1rem;
+	font-weight: lighter;
+}
+
+p{
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+
+/* denna klass på flera sidor*/
+.content{
+	display: flex;
+    align-items: stretch;
+}
+
+/* denna klass används bara på förstasidan*/
+.img-frontpage{
+	display: flex;
+	flex-direction: column;
+}
+
+/* denna klass används bara på förstasidan*/
+.img-front{
+	width: 25rem;
+	display: flex;
+}
+
+/* detta id används bara på förstasidan*/
+#img1{
+	margin-bottom: 1rem;
+}
+
+/* denna klass används bara på en sida*/
+.image{
+	width: 51rem;
+	margin-top: 1rem;
+}
+
+table{
+	border-collapse: collapse;
+	text-align: center;
+}
+
+td{
+	border: 1px solid black;
+	padding: 1rem;
+}
+
+/* denna klass används bara på en sida*/
+.address{
+	list-style: none;
+	text-align: center;
+	letter-spacing: 0.1rem;
+	line-height: 2rem;
+	padding: 0;
+}
+
+/* denna klass används bara på en sida*/
+.email-form{
+	margin-top: 2rem;
+	margin-bottom: 5rem;
+}
+
+/* denna klass används bara på en sida*/
+.input-filed{
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+/* denna klass används bara på en sida*/
+.comment{
+	height: 10rem;
+	width: 100%;
+}
+
+@media screen and (max-width: 51rem) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    #img1{
+    	margin-top: 1rem;
+    }
+    .text-box{
+    	margin-right: 0;
+    }
+}
+
+
