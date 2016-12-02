@@ -14,10 +14,14 @@
     font-style: normal;
 }
 
-html{
+
+/* Specificity 0001 */
+html{ 
 	font-size: 16px;
 }
 
+/* detta element används på alla sidor */
+/* Specificity 0001 */
 body{
 	display: flex;
 	flex-direction: column;
@@ -27,11 +31,15 @@ body{
 	font-family: 'slabo_27pxregular';
 }
 
+/* detta element används på alla sidor */
+/* Specificity 0001 */
 h1, h2, h3, th{
 	font-family: 'roboto_condensedlight', Sans-serif;
 	font-weight: normal;
 }
 
+/* detta element används på alla sidor */
+/* Specificity 0001 */
 header{
 	width: 100%;
 	box-sizing: border-box;
@@ -43,35 +51,42 @@ header{
 }
 
 /* denna klass används bara en gång*/
+/* Specificity 0010 */
 .name-logo{ 
 	display: flex;
 	align-items: center;
 }
 
 /* detta är ett specifikt id för loggan*/
+/* Specificity 0010 */
 #logotype{
 	width: 4rem;
 	height: 4rem;
 }
 
 /* denna klass används i headingen på varje sida*/
+/* Specificity 0010 */
 .navigation{
 	font-size: 0.8rem;
 	color: black;
 }
 
 /* denna klass används i headingen på varje sida*/
+/* Specificity 0010 */
 .break{
 	display: inline-block;
 	margin: 0;
 }
 
 /* denna klass används i headingen på varje sida*/
+/* Specificity 0010 */
 .pages{
 	color: black;
 	text-decoration: none;
 }
 
+/* detta element används på alla sidor */
+/* Specificity 0001 */
 main{
 	display: flex;
 	flex-direction: column;
@@ -80,17 +95,20 @@ main{
 }
 
 /* denna klass används på varje sida*/
+/* Specificity 0010 */
 .heading1{
 	border-bottom: 0.15rem solid;
 }
 
 /* denna klass används bara på förstasidan*/
+/* Specificity 0010 */
 .container{
 	display: flex;
 	margin-top: 1.5rem;
 }
 
 /* denna klass används bara på förstasidan*/
+/* Specificity 0010 */
 .text-box{
 	box-sizing: border-box;
 	background-color: #231a1b;
@@ -104,6 +122,8 @@ main{
 	font-weight: lighter;
 }
 
+/* detta element används på flera sidor */
+/* Specificity 0001 */
 p{
 	display: flex;
 	align-items: center;
@@ -111,45 +131,55 @@ p{
 }
 
 /* denna klass på flera sidor*/
+/* Specificity 0010 */
 .content{
 	display: flex;
     align-items: stretch;
 }
 
 /* denna klass används bara på förstasidan*/
+/* Specificity 0010 */
 .img-frontpage{
 	display: flex;
 	flex-direction: column;
 }
 
 /* denna klass används bara på förstasidan*/
+/* Specificity 0010 */
 .img-front{
 	width: 25rem;
 	display: flex;
 }
 
 /* detta id används bara på förstasidan*/
+/* Specificity 0100 */
 #img1{
 	margin-bottom: 1rem;
 }
 
 /* denna klass används bara på en sida*/
+/* Specificity 0010 */
 .image{
 	width: 51rem;
 	margin-top: 1rem;
 }
 
+/* detta element används på en sida */
+/* Specificity 0001 */
 table{
 	border-collapse: collapse;
 	text-align: center;
 }
 
+/* detta element används på en sida */
+/* Specificity 0001 */
 td{
 	border: 1px solid black;
 	padding: 1rem;
 }
 
 /* denna klass används bara på en sida*/
+/* Specificity 0010 */
 .address{
 	list-style: none;
 	text-align: center;
@@ -159,18 +189,21 @@ td{
 }
 
 /* denna klass används bara på en sida*/
+/* Specificity 0010 */
 .email-form{
 	margin-top: 2rem;
 	margin-bottom: 5rem;
 }
 
 /* denna klass används bara på en sida*/
+/* Specificity 0010 */
 .input-filed{
 	width: 100%;
 	margin-bottom: 1rem;
 }
 
 /* denna klass används bara på en sida*/
+/* Specificity 0010 */
 .comment{
 	height: 10rem;
 	width: 100%;
