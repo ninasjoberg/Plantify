@@ -1,0 +1,25 @@
+@media screen and (max-width: 51rem) {
+    .container {
+        flex-direction: column;
+        align-items: center; 
+    }
+    #img1{
+    	margin-top: 1rem;
+    }
+    .text-box{
+    	margin-right: 0;
+    }
+    header{
+    	flex-direction: column;
+    }
+    td{
+    	padding: 0.2rem;
+    	width: 5rem;
+    }
+    .text-about{
+    	width: 25rem; 
+    }
+    .content-about{
+    	flex-direction: column;
+    }
+}

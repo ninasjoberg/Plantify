@@ -28,10 +28,10 @@ body{
 	align-items: center;
 	width: 100%;
 	margin: 0 auto;
-	font-family: 'slabo_27pxregular';
+	font-family: 'slabo_27pxregular', Times;
 }
 
-/* detta element används på alla sidor */
+/* dessaa element används på alla sidor, flera gånger på vissa sidor */
 /* Specificity 0001 */
 h1, h2, h3, th{
 	font-family: 'roboto_condensedlight', Sans-serif;
@@ -64,24 +64,25 @@ header{
 	height: 4rem;
 }
 
-/* denna klass används i headingen på varje sida*/
+/* denna klass används i headern på varje sida*/
 /* Specificity 0010 */
 .navigation{
 	font-size: 0.8rem;
 	color: black;
 }
 
-/* denna klass används i headingen på varje sida*/
+/* denna klass används flera gånger i headern på varje sida*/
 /* Specificity 0010 */
 .break{
 	display: inline-block;
 	margin: 0;
 }
 
-/* denna klass används i headingen på varje sida*/
+/* denna klass används flera gånger i headern på varje sida*/
 /* Specificity 0010 */
 .pages{
 	color: black;
+	font-size: 1rem;
 	text-decoration: none;
 }
 
@@ -100,14 +101,14 @@ main{
 	border-bottom: 0.15rem solid;
 }
 
-/* denna klass används bara på förstasidan*/
+/* denna klass används bara en gång på förstasidan*/
 /* Specificity 0010 */
 .container{
 	display: flex;
 	margin-top: 1.5rem;
 }
 
-/* denna klass används bara på förstasidan*/
+/* denna klass används bara en gång på förstasidan*/
 /* Specificity 0010 */
 .text-box{
 	box-sizing: border-box;
@@ -122,7 +123,7 @@ main{
 	font-weight: lighter;
 }
 
-/* detta element används på flera sidor */
+/* detta element används på flera sidor, flera gånger på vissa sidor*/
 /* Specificity 0001 */
 p{
 	display: flex;
@@ -130,39 +131,45 @@ p{
 	margin: 0;
 }
 
-/* denna klass på flera sidor*/
+/* denna klass används på flera sidor*/
 /* Specificity 0010 */
-.content{
+.content-home{
 	display: flex;
-    align-items: stretch;
 }
 
-/* denna klass används bara på förstasidan*/
+/* denna klass används bara en gång på förstasidan*/
 /* Specificity 0010 */
 .img-frontpage{
 	display: flex;
 	flex-direction: column;
 }
 
-/* denna klass används bara på förstasidan*/
+/* denna klass används bara en gång på förstasidan*/
 /* Specificity 0010 */
 .img-front{
 	width: 25rem;
 	display: flex;
 }
 
-/* detta id används bara på förstasidan*/
+
+/* detta är ett specifikt id för en bild som bara används på förstasidan*/
 /* Specificity 0100 */
 #img1{
 	margin-bottom: 1rem;
 }
 
-/* denna klass används bara på en sida*/
-/* Specificity 0010 */
-.image{
-	width: 51rem;
-	margin-top: 1rem;
+
+.content-about{
+	display: flex;
+	border: 1px solid black;
+	padding: 1rem;
 }
+
+.text-about{
+	width: 25rem;
+	margin-right: 1rem;
+}
+
 
 /* detta element används på en sida */
 /* Specificity 0001 */
@@ -171,14 +178,24 @@ table{
 	text-align: center;
 }
 
-/* detta element används på en sida */
+/* detta element används flera gånger på en sida */
 /* Specificity 0001 */
 td{
 	border: 1px solid black;
 	padding: 1rem;
 }
 
-/* denna klass används bara på en sida*/
+li{
+	display:flex;
+	justify-content: space-between;
+}
+
+.h-text{
+	display: flex;
+	flex-direction: column;
+}
+
+/* denna klass används bara en gång på en sida*/
 /* Specificity 0010 */
 .address{
 	list-style: none;
@@ -188,7 +205,7 @@ td{
 	padding: 0;
 }
 
-/* denna klass används bara på en sida*/
+/* denna klass används bara en gång på en sida*/
 /* Specificity 0010 */
 .email-form{
 	margin-top: 2rem;
@@ -202,24 +219,37 @@ td{
 	margin-bottom: 1rem;
 }
 
-/* denna klass används bara på en sida*/
+/* denna klass används flera gånger på en sida*/
 /* Specificity 0010 */
 .comment{
 	height: 10rem;
 	width: 100%;
 }
 
+
 @media screen and (max-width: 51rem) {
     .container {
         flex-direction: column;
-        align-items: center;
-        width: 80%;
+        align-items: center; 
     }
     #img1{
     	margin-top: 1rem;
     }
     .text-box{
     	margin-right: 0;
+    }
+    header{
+    	flex-direction: column;
+    }
+    td{
+    	padding: 0.2rem;
+    	width: 5rem;
+    }
+    .text-about{
+    	width: 25rem; 
+    }
+    .content-about{
+    	flex-direction: column;
     }
 }
 
