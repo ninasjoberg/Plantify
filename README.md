@@ -1,6 +1,6 @@
 Inlämningsuppgift ~ HTML/CSS
 
-Du ska i denna inlämningsuppgift visa att du kan använda dig utav grundläggande HTML & CSS för att bygga upp en enklare hemsida. I denna uppgift kommer du dock få arbeta utifrån ett redan färdigt material. Sidorna ska skapas med enbart egenskriven css och utan ramverk.
+Du ska i denna inlämningsuppgift visa att du kan använda dig utav grundläggande HTML & CSS för att bygga upp en enklare hemsida. I denna uppgift kommer du dock få arbeta utifrån ett redan färdigt material. Sidorna ska skapas med enbart egenskriven css och utan ramverk. Uppgiften ska lämnas in innan helgen, dvs ni har 2 dagar på er att utföra uppgiften. 
 
 
 Krav
